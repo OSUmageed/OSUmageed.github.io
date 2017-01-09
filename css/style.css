@@ -74,9 +74,18 @@ a:active {
 .clear	{
 	float: none;
 	clear: both;
-	margin: 20px 0px 20px 0px;
+	margin: 10px 0px 10px 0px;
 }
 
+hr { 
+    display: block;
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
 
 /* Header
 --------------------------------------------------- */
@@ -155,8 +164,8 @@ a:active {
     padding: 0px 0px 12px 40px;
 }
 
-#contact-details li.twitter	{
-    background: url("../images/twitter_sm.png") no-repeat;
+#contact-details li.github	{
+    background: url("../images/github_logo.png") no-repeat;
 	background-position: 0px 0px;
     padding: 0px 0px 12px 40px;
 }
@@ -166,10 +175,24 @@ a:active {
 /* Main Content
 --------------------------------------------------- */
 
+td.rt {
+	text-align: right;
+}
+
+td.bd{
+	font-weight: bold;
+}
+
 h2.top	{
 	margin: 0px; 
 	font-size: 22px;
 	font-weight: bold;
+}
+
+h3.top	{
+	margin: 0px; 
+	font-size: 20px;
+	font-style: italic;
 }
 
 h2	{
@@ -186,15 +209,15 @@ dl	{
 
 dt	{
 	float: left;
-	width: 200px;
-	font-size: 20px;
+	width: 150px;
+	font-size: 22px;
 	font-weight: bold;
 	font-style: italic;
 	text-align: right;
 }
 
 dd	{
-	width: 620px; 
+	width: 700px; 
 	float: right;
 	margin-right: 20px;
 }
@@ -218,7 +241,7 @@ p.bus1	{
 }
 
 p.edu-info	{
-	margin: 10px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	font-weight: bold;
 	color: #0066cc;
 }
@@ -235,8 +258,12 @@ p.time	{
 	margin: 0px;
 }
 
+p.profile	{
+	margin: 5px 0px 0px 0px;
+}
+
 p.summary	{
-	margin: 10px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 
 
@@ -244,14 +271,21 @@ p.summary	{
 	float: left;
 	list-style: none;
 	margin: 0px 0px 0px -40px;
-	width: 220px;
+	width: 200px;
 }
 
 #skills ul.list2	{	
 	float: left;
 	list-style: none;
 	margin: 0px 0px 0px 0px;
-	width: 220px;
+	width: 200px;
+}
+
+#skills ul.list3	{	
+	float: left;
+	list-style: none;
+	margin: 0px 0px 0px 40px;
+	width: 150px;
 }
 
 #skills li {

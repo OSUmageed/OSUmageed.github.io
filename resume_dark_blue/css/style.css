@@ -17,8 +17,6 @@ Light Gray: #eee
 
 */
 
-
-
 /* Default Styles
 --------------------------------------------------- */
 
@@ -187,9 +185,9 @@ dl	{
 dt	{
 	float: left;
 	width: 200px;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: bold;
-	font-style: italic;
+	/*font-style: italic;*/
 	text-align: right;
 }
 

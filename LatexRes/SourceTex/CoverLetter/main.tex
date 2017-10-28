@@ -1,0 +1,104 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[left=0.8in,
+right=0.8in,
+top=0.75in,
+bottom=1.2in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Daniel}{Magee}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{2508 NW Coolidge Way}{Corvallis, OR 97330}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(503)~449~7891}                   % optional, remove / comment the line if not wanted
+\email{mageed@oregonstate.edu}                               % optional, remove / comment the line if not wanted
+\homepage{http://www.danieljmagee.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{There are more things in heaven and Earth, Horatio, than are dreamt of in your philosophy.}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\footnotesize ++}}}
+\renewcommand{\baselinestretch}{1}
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{DeepMind}{5 New Street Square\\London EC4A 3TW, UK}
+\date{\today}
+\opening{Dear Hiring Committee,}
+\closing{Yours faithfully,}
+
+\makelettertitle
+
+I would like to submit my application for the Research Engineer position at DeepMind and be considered for future engineering openings at DeepMind, particularly as a software, compiler, or physics engineer.
+Frankly, I cannot recall seeing an employment posting that I have felt better suited for than this.
+
+I am currently a Mechanical Engineering M.S. student and graduate research assistant at Oregon State University.  
+My research involves implementing a novel domain decomposition method in C/\CC, CUDA and Python for explicit numerical schemes for partial differential equations.
+This decomposition method is essentially a communication avoiding algorithm that exploits the properties of the memory and execution paradigms on GPUs and heterogeneous compute architectures.
+I taught myself C and CUDA as a graduate student, and I enjoy learning new languages.
+I am also developing an open-source python package for solving multi-mode heat transfer problems.
+This package, pyHeatTransfer, includes an interactive, graphic front-end designed to simulate and visualize transient heat conduction phenomena in a 3D solid exposed to convection and radiation.
+I have no direct, practical experience in AI or Machine Learning, but I have used statistics heavily in both of my internships where I used designed experiments, generalized linear models, descriptive statistics, and curve fitting to characterize physical phenomena such as plastic deformation and chemical kinetics.
+
+In addition to my engineering experience, my previous work, education, and life experiences have given me skills relevant to this particular position. 
+My academic and professional engineering skills are bolstered by the creativity and system oriented thinking that I cultivated as a literature student. 
+My BA in English has also given me a sense of grammar and syntax that has proven invaluable as I've developed my programming skills and composed technical documents.
+I am a US citizen, and I have lived as a student and work visa holder in the UK and South Korea as an adult.
+I have worked as an instructor at Oregon State where I mainly taught MATLAB programming and in South Korea where I taught English. 
+These experiences greatly developed my communication skills as well as my ability to adapt to new environments and tasks.
+
+I am a recent convert to pro-AI camp.
+The recent growth in AI technologies have extended to realms of nuance that were difficult to fathom at the start of the decade.
+I fully absorbed this fact at the AIAA SciTech Forum this January where I attended a talk showing the success of simple machine learning algorithms at predicting wall functions for turbulent flows.
+That is, AI is able to intuit and synthesize information about physical phenomena that we are scarcely capable of describing mathematically.
+In light of the pressing challenges facing our environment and economy that we seem collectively incapable of effectively organizing to address, AI is not only a necessity but a moral imperative.
+My initial motivation for becoming an engineer was to participate in developing renewable energy technologies; while this challenge is as prescient as ever, I'm now convinced that the most important human project is AI development.
+Without AI, I'm afraid any attempts to address other challenges will fall short.
+If that's, ``Summoning the demon``, as Elon Musk put it, then I'm ready to draw the inscribed pentagram and make the incantations.
+
+Thank you for your consideration and your attention.  
+Although I am not available for this position until June 2018 when I will complete my degree, I do hope to be considered for this and other related positions because I genuinely believe in your organization's work and mission. 
+In conclusion, I'd like to assure you that I am familiar with the UK and willing to fully commit to relocating.
+I spent the third year of my English degree in the UK at the University of East Anglia in Norwich, and returned for six months on a work visa after finishing my degree.
+My experiences in the UK have been overwhelmingly positive, and it is my sincerest wish to return permanently.
+
+\vspace{2mm}
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.

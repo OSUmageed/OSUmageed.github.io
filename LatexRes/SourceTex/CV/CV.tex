@@ -1,0 +1,275 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Daniel J. Magee}
+\newcommand{\CVTitle}{Dan's CV for DeepMind}
+\newcommand{\CVNote}{CV compiled on {\today} for DeepMind}
+\newcommand{\CVWebpage}{http://www.danieljmagee.com}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfkeywords={},
+unicode=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+{2508 NW Coolidge Way, Corvallis, Oregon 97330, USA}
+\par
+\href{mailto:mageed@oregonstate.edu}
+{mageed@oregonstate.edu}
+\,\SubBulletSymbol\,
++1\,(503)\,449-7891
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\textbf{Oregon State University},
+Corvallis, Oregon, USA
+
+\BulletItem
+M.S. in Mechanical Engineering
+\hfill
+\DatestampYMD{2016}{04} --
+\DatestampYMD{2018}{06}
+
+\begin{Detail}
+\SubBulletItem
+Adviser:
+Prof.~Kyle~Niemeyer
+\SubBulletItem
+Focus:
+Thermal-fluid sciences; CFD; numerical methods; Parallel, GPU, and heterogeneous computing.
+\end{Detail}
+
+\BulletItem
+B.S. in 
+{Mechanical Engineering}
+\hfill
+\DatestampYMD{2012}{06} --
+\DatestampYMD{2016}{03}
+
+\begin{Detail}
+\SubBulletItem
+Cumulative GPA: 3.78 / 4.0
+\end{Detail}
+
+\BigGap
+\Entry
+\textbf{Temple University},
+Philadelphia, Pennsylvania, USA
+
+\BulletItem
+BS in English
+\hfill
+\DatestampYMD{2002}{05} --
+\DatestampYMD{2006}{05}
+
+\begin{Detail}
+\SubBulletItem
+Cumulative GPA: 3.42 / 4.00
+\end{Detail}
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+\textbf{Software:} 
+MATLAB,
+Python,
+CUDA,
+C/C++,
+Linux Command Line,
+Markdown,
+HTML,
+git,
+{\LaTeX},
+OpenMP,
+MPI
+\newline
+\textbf{Technical:}
+Statistics, 
+Generalized linear models, 
+Design of Experiments, 
+Numerical analysis, 
+Graph algorithms,
+Communication avoiding algorithms,
+Dynamic programming,
+Computer hardware knowledge
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\Gap
+\href{https://arxiv.org/abs/1612.02495}
+{\underline{\smash{D. Magee}} and K. Niemeyer,
+``An initial investigation of the performance of GPU-based swept time-space decomposition,''
+in \textit{55th AIAA Aerospace Sciences Meeting, AIAA SciTech Forum},
+Grapevine, TX, USA,
+\DatestampYM{2017}{01}.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work Experience}
+{Work Experience}
+{PDF:OtherWorkExperience}
+
+\Entry
+\textbf{Oregon State University},
+Corvallis, Oregon, USA
+
+\BulletItem
+Graduate Research Assistant,
+\href{https://niemeyer-research-group.github.io}
+{\underline{\smash{Niemeyer Research Group}}},
+\hfill
+\DatestampYMD{2016}{03} --
+present
+
+\begin{Detail}
+\SubBulletItem
+Developing communication-avoiding algorithms for CPU and GPU architectures and heterogeneous compute clusters to accelerate the performance of explicit, time-stepping numerical schemes for partial differential equations.
+\SubBulletItem
+Designing experiments for empirical analysis of parallel algorithms using python and CUDA.
+\end{Detail}
+\Gap
+
+\BulletItem
+Teaching Assistant,
+\hfill
+\DatestampYMD{2013}{06} --
+\DatestampYMD{2016}{03}
+
+\begin{Detail}
+\SubBulletItem
+ENGR 112: MATLAB - 6 semesters 
+\SubBulletItem
+ME 499/599: Python - 1 semester
+\SubBulletItem
+ME 317: Intermeidate Dynamics - 1 semester
+\end{Detail}
+\BigGap
+
+\Entry
+\textbf{HP Inc.},
+Corvallis, Oregon, USA
+
+\BulletItem
+Process Engineering Intern
+\hfill
+\DatestampYMD{2015}{03} --
+\DatestampYMD{2015}{09}
+
+\begin{Detail}
+\SubBulletItem
+Developed experiments and analytical procedures involving linear regression and curve fitting to characterize adhesive cure process.
+\SubBulletItem
+Designed fixtures for Helium leak testing and geometric analysis of delicate component.
+\end{Detail}
+\BigGap
+
+\Entry
+\textbf{Daimler Trucks North America},
+Corvallis, Oregon, USA
+
+\BulletItem
+Facilities Engineering Intern
+\hfill
+\DatestampYMD{2014}{03} --
+\DatestampYMD{2014}{09}
+
+\begin{Detail}
+\SubBulletItem
+Analyzed and mapped compressed air system throughout ten-acre facility and recommended specific improvements.
+\SubBulletItem
+Designed and managed bidding process for automated spray system in elecrophoretic coating process.
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Projects %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Open-Source Projects}
+{Open-Source Projects}
+{PDF:Open-SourceProjects}
+
+\Entry
+\href{https://github.com/OSUmageed/pyHeatTransfer}{\textbf{pyHeatTransfer}} | Role: Creator | Development stage: pre-Alpha
+
+Python software package containing tools for evaluating heat transfer problems, a crowdsourced database of thermo-physical properties for solids, and an interactive GUI for evaluating and visualizing heat transfer in 3D solids using numerical methods.
+
+\end{Body}
+\end{document}

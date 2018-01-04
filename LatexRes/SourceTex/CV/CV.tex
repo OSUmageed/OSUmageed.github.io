@@ -12,7 +12,7 @@
 
 % See "README.md" for instructions on compiling this document.
 
-\documentclass[letterpaper, MMMyyyy, nonstopmode]{simpleresumecv}
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
 % Class options:
 % a4paper, letterpaper, nonstopmode, draftmode
 % MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
@@ -23,8 +23,8 @@
 
 % CV Info (to be customized).
 \newcommand{\CVAuthor}{Daniel J. Magee}
-\newcommand{\CVTitle}{Dan's CV for DeepMind}
-\newcommand{\CVNote}{CV compiled on {\today} for DeepMind}
+\newcommand{\CVTitle}{Dan's CV Jan 2018}
+\newcommand{\CVNote}{CV compiled on {\today} in general}
 \newcommand{\CVWebpage}{http://www.danieljmagee.com}
 
 % PDF settings and properties.
@@ -142,23 +142,27 @@ MATLAB,
 Python,
 CUDA,
 C/C++,
-Linux Command Line,
+Linux,
+Bash,
 Markdown,
-HTML,
 git,
 {\LaTeX},
 OpenMP,
-MPI
+MPI,
+OpenCL,
+Univa Grid Engine,
+GNU Make,
+MS Office (VBA)
 \newline
 \textbf{Technical:}
 Statistics, 
-Generalized linear models,
+Generalized linear models, 
+Design of Experiments, 
 Numerical analysis, 
-Algorithms,
+Graph algorithms,
+Communication avoiding algorithms,
 Dynamic programming,
-Computer hardware,
-Thermal-Fluid Transport,
-Thermodynamics
+Computer hardware
 
 %%%%%%%%%%%%%%%%%%
 %% PUBLICATIONS %%
@@ -171,16 +175,18 @@ Thermodynamics
 
 \Gap
 \href{https://arxiv.org/abs/1612.02495}
-{\underline{\smash{D. Magee}} and K. Niemeyer,
+{D. Magee and K. Niemeyer,
 ``An initial investigation of the performance of GPU-based swept time-space decomposition,''
 in \textit{55th AIAA Aerospace Sciences Meeting, AIAA SciTech Forum},
 Grapevine, TX, USA,
 \DatestampYM{2017}{01}.}
 
-\href{https://arxiv.org/abs/1705.03162}
-{\underline{\smash{D. Magee}} and K. Niemeyer,
-	``Accelerating solutions of PDEs with GPU-based swept time-space decomposition,''
-	 In preparation, \DatestampYM{2017}{05}}
+\Gap
+\href{https://doi.org/10.1016/j.jcp.2017.12.028}
+{D. Magee and K. Niemeyer,
+``Accelerating solutions of one-dimensional unsteady PDEs with GPU-based swept time-space decomposition,''
+in \textit{Journal of Computational Physics},
+(2017).}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% WORK EXPERIENCE %%
@@ -198,10 +204,9 @@ Corvallis, Oregon, USA
 \BulletItem
 Graduate Research Assistant,
 \href{https://niemeyer-research-group.github.io}
-{\underline{\smash{Niemeyer Research Group}}},
+{\underline{\smash{Niemeyer Research Group}}}
 \hfill
-\DatestampYMD{2016}{03} --
-present
+\DatestampYMD{2016}{03} -- present
 
 \begin{Detail}
 \SubBulletItem
@@ -212,10 +217,9 @@ Designing experiments for empirical analysis of parallel algorithms using python
 \Gap
 
 \BulletItem
-Teaching Assistant,
+Teaching Assistant 
 \hfill
-\DatestampYMD{2013}{06} --
-\DatestampYMD{2016}{03}
+\DatestampYMD{2013}{06} -- \DatestampYMD{2016}{03}
 
 \begin{Detail}
 \SubBulletItem
@@ -234,8 +238,7 @@ Corvallis, Oregon, USA
 \BulletItem
 Process Engineering Intern
 \hfill
-\DatestampYMD{2015}{03} --
-\DatestampYMD{2015}{09}
+\DatestampYMD{2015}{03} -- \DatestampYMD{2015}{09}
 
 \begin{Detail}
 \SubBulletItem
@@ -252,8 +255,7 @@ Corvallis, Oregon, USA
 \BulletItem
 Facilities Engineering Intern
 \hfill
-\DatestampYMD{2014}{03} --
-\DatestampYMD{2014}{09}
+\DatestampYMD{2014}{03} -- \DatestampYMD{2014}{09}
 
 \begin{Detail}
 \SubBulletItem
@@ -266,15 +268,15 @@ Designed and managed bidding process for automated spray system in elecrophoreti
 %% Projects %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\Section
-%{Open-Source Projects}
-%{Open-Source Projects}
-%{PDF:Open-SourceProjects}
-%
-%\Entry
-%\href{https://github.com/OSUmageed/pyHeatTransfer}{\textbf{pyHeatTransfer}} | Role: Creator | Development stage: pre-Alpha
-%
-%Python software package containing tools for evaluating heat transfer problems, a crowdsourced database of thermo-physical properties for solids, and an interactive GUI for evaluating and visualizing heat transfer in 3D solids using numerical methods.
+% \Section
+% {Open-Source Projects}
+% {Open-Source Projects}
+% {PDF:Open-SourceProjects}
+
+% \Entry
+% \href{https://github.com/OSUmageed/pyHeatTransfer}{\textbf{pyHeatTransfer}} | Role: Creator | Development stage: pre-Alpha
+
+% Python software package containing tools for evaluating heat transfer problems, a crowdsourced database of thermo-physical properties for solids, and an interactive GUI for evaluating and visualizing heat transfer in 3D solids using numerical methods.
 
 \end{Body}
 \end{document}

@@ -92,21 +92,6 @@ hr {
 
 
 #contact-details .header_1 {
-hr { 
-    display: block;
-    margin-top: 0.0em;
-    margin-bottom: 0.0em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-} 
-
-/* Header
---------------------------------------------------- */
-
-
-#contact-details .header_1 {
 	float: left;
 	width: 350px;
 	text-align: center;
